@@ -1,4 +1,4 @@
-# Bolivar
+# Oblivar
 
 A Cloudflare Worker that periodically inspects your R2 usage quota and toggles an
 access key when a configurable limit is crossed. This allows you to keep a
