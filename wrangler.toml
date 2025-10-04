@@ -1,0 +1,19 @@
+name = "oblivar"
+main = "src/index.ts"
+compatibility_date = "2024-08-21"
+workers_dev = true
+
+[triggers]
+# Default cron runs every 15 minutes; adjust as needed.
+crons = ["*/15 * * * *"]
+
+[[kv_namespaces]]
+# Replace the IDs below with the values returned by `wrangler kv:namespace create`
+binding = "STATE_KV"
+id = "00000000000000000000000000000000"
+preview_id = "11111111111111111111111111111111"
+
+[vars]
+# Replace with your own defaults or override via `wrangler.toml` environments.
+QUOTA_BYTES = "10GB"
+REENABLE_THRESHOLD = "8GB"
