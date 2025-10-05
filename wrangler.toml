@@ -10,7 +10,7 @@ crons = ["*/15 * * * *"]
 [[kv_namespaces]]
 # Replace the IDs below with the values returned by `wrangler kv:namespace create`
 binding = "STATE_KV"
-id = "00000000000000000000000000000000"
+id = "3884489cd29f4008aa9a8b64956512ff"
 preview_id = "11111111111111111111111111111111"
 
 [vars]
